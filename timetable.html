@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Time Table</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+        .timetable-container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            background-color: #4263eb;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        th {
+            background-color: #e9ecef;
+        }
+        .course-info {
+            margin-top: 20px;
+        }
+        .course-info table {
+            width: auto;
+            margin: 0 auto;
+        }
+        .course-info td {
+            text-align: left;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timetable-container">
+        <h2>My Time Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timing</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:30 - 10:20 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td>21CSH-432:P::GP-B: By Siddharth Kumar(E12853) at Block-D4-106</td>
+                    <td>21CSH-432:L::GP-All: By Siddharth Kumar(E12853) at Block-D3-505</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:20 - 11:10 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td>21CSH-432:P::GP-B: By Siddharth Kumar(E12853) at Block-D4-106</td>
+                    <td>21CSH-434:L::GP-All: By Mohit Lalit(E13845) at Block-D3-305</td>
+                    <td>21CSH-432:L::GP-All: By Siddharth Kumar(E12853) at Block-D3-507</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:10 - 12:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>21CST-433:L::GP-All: By Kirti(E16189) at Block-D3-507</td>
+                    <td>21CST-433:L::GP-All: By Kirti(E16189) at Block-D3-102</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 12:50 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td>21CSH-432:L::GP-All: By Siddharth Kumar(E12853) at Block-D3-305</td>
+                    <td>21CSH-434:L::GP-All: By Mohit Lalit(E13845) at Block-D3-505</td>
+                    <td>21CSP-441:P::GP-B: By Kirti(E16189) at Block-D3-305</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>01:50 - 02:40 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td>EDO-477:L::GP-All: By Amrinder Singh(E13609) at Block-A3-613</td>
+                    <td>EDO-477:L::GP-All: By Amrinder Singh(E13609) at Block-A3-613</td>
+                    <td>EDO-477:L::GP-All: By Amrinder Singh(E13609) at Block-A3-613</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>02:40 - 03:30 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>21CST-433:L::GP-All: By Kirti(E16189) at Block-D3-102</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>03:30 - 04:20 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td>21CSH-434:L::GP-All: By Mohit Lalit(E13845) at Block-D3-505</td>
+                    <td>21CSH-434:P::GP-B: By Mohit Lalit(E13845) at Block-D4-106</td>
+                    <td>21CSH-434:P::GP-B: By Mohit Lalit(E13845) at Block-D4-106</td>
+                    <td>21CSR-435:P::GP-B: By at Block-D3-307-C</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="course-info">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>Course Code</strong></td>
+                        <td><strong>Title</strong></td>
+                    </tr>
+                    <tr>
+                        <td>21CSH-432</td>
+                        <td>Deep Learning</td>
+                    </tr>
+                    <tr>
+                        <td>21CSH-434</td>
+                        <td>Advanced Database Management</td>
+                    </tr>
+                    <tr>
+                        <td>21CSP-441</td>
+                        <td>Technical Training II</td>
+                    </tr>
+                    <tr>
+                        <td>21CSR-435</td>
+                        <td>Major Project</td>
+                    </tr>
+                    <tr>
+                        <td>21CST-433</td>
+                        <td>Security and Data Privacy Laws and Standards</td>
+                    </tr>
+                    <tr>
+                        <td>EDO-477</td>
+                        <td>Art of Living</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

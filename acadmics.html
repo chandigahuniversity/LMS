@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Plan</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main Container */
+        .container {
+            width: 80%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            background-color: #4169e1;
+            color: #ffffff;
+            padding: 10px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Lecture Plan Table */
+        .lecture-plan-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .lecture-plan-table th,
+        .lecture-plan-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .lecture-plan-table th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        /* Download Button */
+        .download-btn a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .download-btn a:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+            color: #333;
+        }
+
+        .footer a {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            My Courses and Lecture Plan
+        </div>
+
+        <!-- Lecture Plan Table -->
+        <table class="lecture-plan-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Section</th>
+                    <th>Type</th>
+                    <th>Lecture Plan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>21CST-433</td>
+                    <td>Security and Data Privacy Laws and Standards</td>
+                    <td>21AML-6</td>
+                    <td>Theory</td>
+                    <td class="download-btn"><a target="_blank" href="LecturePlan1.pdf">Download PDF</a></td>
+                </tr>
+                <tr>
+                    <td>EDO-477</td>
+                    <td>Art of Living</td>
+                    <td>0E_EDO-477_1</td>
+                    <td>Theory</td>
+                    <td class="download-btn"><a href="#">Download PDF</a></td>
+                </tr>
+                <tr>
+                    <td>21CSH-432</td>
+                    <td>Deep Learning</td>
+                    <td>21AML-6</td>
+                    <td>Theory/Practical</td>
+                    <td class="download-btn"><a target="_blank" href="LecturePlan2.pdf">Download PDF</a></td>
+                </tr>
+                <tr>
+                    <td>21CSH-434</td>
+                    <td>Advanced Database Management</td>
+                    <td>21AML-6</td>
+                    <td>Theory/Practical</td>
+                    <td class="download-btn"><a target="_blank" href="LecturePlan3.pdf">Download PDF</a></td>
+                </tr>
+                <tr>
+                    <td>21CSP-441</td>
+                    <td>Technical Training II</td>
+                    <td>21AML-6</td>
+                    <td>Practical</td>
+                    <td class="download-btn"><a href="#">Download PDF</a></td>
+                </tr>
+                <tr>
+                    <td>21CSR-435</td>
+                    <td>Major Project</td>
+                    <td>21AML-6</td>
+                    <td>Practical</td>
+                    <td class="download-btn">-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer -->
+        <div class="footer">
+            Chandigarh University Gharuan, Mohali (Punjab) <br>
+            General Helpline No: 18002571800 <br>
+            Email Id: studentcare@cumail.in <br>
+            <a href="#">Report a Bug 🐞</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

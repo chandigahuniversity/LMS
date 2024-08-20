@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Table</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Attendance Table */
+        .attendance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .attendance-table th,
+        .attendance-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .attendance-table th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        /* View Button */
+        .view-btn a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #ff0000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .view-btn a:hover {
+            background-color: #cc0000;
+        }
+
+        /* Notes Section */
+        .notes {
+            font-size: 14px;
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        .notes ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .notes li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Attendance Table -->
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Title</th>
+                    <th>Total Delv.</th>
+                    <th>Total Attd.</th>
+                    <th>Duty Leave N P</th>
+                    <th>Duty Leave Others</th>
+                    <th>Medical Leave</th>
+                    <th>Eligible Delivered</th>
+                    <th>Eligible Attended</th>
+                    <th>Eligible Percentage</th>
+                    <th>View Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>21CSH-432</td>
+                    <td>Deep Learning</td>
+                    <td>24</td>
+                    <td>14</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>24</td>
+                    <td>14</td>
+                    <td>88.33</td>
+                    <td class="view-btn"><a target="_blank" href="attendencepdf1.pdf">VIEW</a></td>
+                </tr>
+                <tr>
+                    <td>21CSH-434</td>
+                    <td>Advanced Database Management</td>
+                    <td>21</td>
+                    <td>11</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>21</td>
+                    <td>11</td>
+                    <td>92.38</td>
+                    <td class="view-btn"><a target="_blank" href="attendencepdf2.pdf">VIEW</a></td>
+                </tr>
+                <tr>
+                    <td>21CSP-441</td>
+                    <td>Technical Training II</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>90</td>
+                    <td class="view-btn"><a href="att">VIEW</a></td>
+                </tr>
+                <tr>
+                    <td>21CSR-435</td>
+                    <td>Major Project</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="view-btn"><a href="#">VIEW</a></td>
+                </tr>
+                <tr>
+                    <td>21CST-433</td>
+                    <td>Security and Data Privacy Laws and Standards</td>
+                    <td>13</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>13</td>
+                    <td>8</td>
+                    <td>81.54</td>
+                    <td class="view-btn"><a target="_blank" href="attendencepdf3.pdf">VIEW</a></td>
+                </tr>
+                <tr>
+                    <td>EDO-477</td>
+                    <td>Art of Living</td>
+                    <td>14</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>14</td>
+                    <td>9</td>
+                    <td>84.29</td>
+                    <td class="view-btn"><a href="#">VIEW</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Notes Section -->
+        <div class="notes">
+            <ul>
+                <li><strong>Types of Duty Leaves</strong></li>
+                <li>Duty Leave N P : Duty Leave includes Placement Drives, NCC, Summer Exchange Programs</li>
+                <li>Duty Leave Others : Duty Leave other than Placement Drives, NCC, Summer Exchange Programs</li>
+                <li>Eligible Delivered : Total Delivered excluding Duty Leave others and Medical Leave</li>
+                <li>Eligible Attended : Addition of Total Attended and Duty Leave N P</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

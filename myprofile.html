@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main Container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Title */
+        .section-title {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        /* Personal Information */
+        .personal-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .info-group {
+            width: 45%;
+        }
+
+        .info-group p {
+            margin: 5px 0;
+        }
+
+        .photo img {
+            width: 120px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* Qualification Table */
+        .qualification-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .qualification-table th,
+        .qualification-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .qualification-table th {
+            background-color: #f4f4f4;
+        }
+
+        /* Contact Details */
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Student Personal Information Section -->
+        <div class="section">
+            <h2 class="section-title">Student Personal Information</h2>
+            <div class="personal-info">
+                <div class="info-group">
+                    <p><strong>UID:</strong> 21BCS6216</p>
+                    <p><strong>Name:</strong> Aryan Sharma</p>
+                    <p><strong>Father's Name:</strong> Vijay Anand Sharma</p>
+                    <p><strong>Mother Name:</strong> Meena Sharma</p>
+                    <p><strong>Religion:</strong> Hinduism</p>
+                    <p><strong>D.O.B.:</strong> 14 Jul 2004</p>
+                    <p><strong>Admission Year:</strong> 2021</p>
+                    <p><strong>University:</strong> CU</p>
+                </div>
+                <div class="info-group">
+                    <p><strong>Current Semester:</strong> 7</p>
+                    <p><strong>Blood Group:</strong> O+</p>
+                    <p><strong>Current Section:</strong> A</p>
+                    <p><strong>Program Code:</strong> CS221::B.E. (CSE-H) (AI&ML) (IBM)</p>
+                    <p><strong>Student Status:</strong> A</p>
+                    <p><strong>Cast:</strong> GEN</p>
+                    <p><strong>Address:</strong> Kwality Polythreads Pvt Ltd. Sector 3A, Plot -34, Sidcul, Haridwar, Uttarakhand</p>
+                </div>
+                <div class="photo">
+                    <img src="studentphoto.png" alt="Student Photo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Qualification Details Section -->
+        <div class="section">
+            <h2 class="section-title">Qualification Details</h2>
+            <table class="qualification-table">
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Stream</th>
+                        <th>College/School Institute</th>
+                        <th>University Board</th>
+                        <th>Passing Year</th>
+                        <th>Percent Marks</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10th</td>
+                        <td>GEN</td>
+                        <td>BML Munjal Green Medows School Haridwar</td>
+                        <td>Central Board of Secondary Education</td>
+                        <td>2019</td>
+                        <td>88</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10+2</td>
+                        <td>PCM</td>
+                        <td>BML Munjal Green Medows School Haridwar</td>
+                        <td>Central Board of Secondary Education</td>
+                        <td>2021</td>
+                        <td>76.5</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="section">
+            <h2 class="section-title">Contact Details</h2>
+            <div class="contact-info">
+                <p><strong>Contact Type:</strong> Student</p>
+                <p><strong>Mobile:</strong> 7906942780</p>
+                <p><strong>Email:</strong> sharmaaryan8834@gmail.com</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
